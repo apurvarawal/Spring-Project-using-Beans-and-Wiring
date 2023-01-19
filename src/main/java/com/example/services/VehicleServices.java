@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(BeanDefinition.SCOPE_SINGLETON) //creates a single bean inside spring context
+//@Scope(BeanDefinition.SCOPE_SINGLETON) //creates a single bean inside spring context *****[for example2]*****
+@Scope(BeanDefinition.SCOPE_PROTOTYPE) //creates different objects using the same bean *****[for example4]*****
+
 public class VehicleServices {
 
     @Autowired
